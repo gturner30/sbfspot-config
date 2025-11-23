@@ -2532,7 +2532,7 @@ do_preflightcheck()
 
     # Check for supported OS
     local re_codename="\<$lsb_codename\>"
-    if [[ "wheezy jessie stretch" =~ $re_codename ]]; then
+    if [[ "wheezy jessie stretch trixie" =~ $re_codename ]]; then
         echo "Obsolete OS detected: $lsb_desc"
         echo "Upgrade OS or install SBFspot manually following $url_install_wiki"
         exit 1
